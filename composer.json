@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "C6Digital\\LaravelBasicAuth\\": "src/",
-            "C6Digital\\LaravelBasicAuth\\Database\\Factories\\": "database/factories/"
+            "C6Digital\\BasicAuth\\": "src/",
+            "C6Digital\\BasicAuth\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "C6Digital\\LaravelBasicAuth\\Tests\\": "tests/",
+            "C6Digital\\BasicAuth\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,7 +73,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "C6Digital\\LaravelBasicAuth\\LaravelBasicAuthServiceProvider"
+                "C6Digital\\BasicAuth\\BasicAuthServiceProvider"
             ]
         }
     },

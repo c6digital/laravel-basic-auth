@@ -52,7 +52,7 @@ php artisan vendor:publish --tag="laravel-basic-auth-views"
 ## Usage
 
 ```php
-$laravelBasicAuth = new C6Digital\LaravelBasicAuth();
+$laravelBasicAuth = new C6Digital\BasicAuth();
 echo $laravelBasicAuth->echoPhrase('Hello, C6Digital!');
 ```
 

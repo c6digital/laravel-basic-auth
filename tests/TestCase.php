@@ -1,10 +1,10 @@
 <?php
 
-namespace C6Digital\LaravelBasicAuth\Tests;
+namespace C6Digital\BasicAuth\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use C6Digital\LaravelBasicAuth\LaravelBasicAuthServiceProvider;
+use C6Digital\BasicAuth\BasicAuthServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'C6Digital\\LaravelBasicAuth\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'C6Digital\\BasicAuth\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelBasicAuthServiceProvider::class,
+            BasicAuthServiceProvider::class,
         ];
     }
 
