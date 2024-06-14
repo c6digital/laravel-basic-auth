@@ -2,9 +2,9 @@
 
 namespace C6Digital\BasicAuth\Tests;
 
+use C6Digital\BasicAuth\BasicAuthServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use C6Digital\BasicAuth\BasicAuthServiceProvider;
 
 class TestCase extends Orchestra
 {
