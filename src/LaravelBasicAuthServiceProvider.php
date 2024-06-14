@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace C6Digital\LaravelBasicAuth;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use C6Digital\LaravelBasicAuth\Commands\LaravelBasicAuthCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelBasicAuthServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-basic-auth')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-basic-auth_table')
+            ->hasCommand(LaravelBasicAuthCommand::class);
     }
 }
