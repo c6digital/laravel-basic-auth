@@ -74,10 +74,7 @@
         "laravel": {
             "providers": [
                 "C6Digital\\LaravelBasicAuth\\LaravelBasicAuthServiceProvider"
-            ],
-            "aliases": {
-                "LaravelBasicAuth": "C6Digital\\LaravelBasicAuth\\Facades\\LaravelBasicAuth"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
